@@ -49,7 +49,7 @@ export default function RecentProduct() {
       <div className="row">
         {products.length > 0 ? (
           products.map((product) => (
-            <div key={product.id} className="w-1/4">
+            <div key={product.id} className="lg:w-1/4 md:w-1/3 sm:w-1/2">
               <div className="product p-3">
                 <Link to={`ProductDetails/${product.id}`}>
                   <img src={product.imageCover} className="w-full" alt="" />

@@ -24,7 +24,7 @@ useEffect(()=>{
   };
   return (
     <Slider {...settings}>
-      {categories.map((category)=><div>
+      {categories.map((category)=><div className="lg:w-1/4 md:w-1/3 sm:w-1/2">
         <img src={category.image} className="w-full h-[200px] object-cover rounded-lg p-1" alt="" />
         <h4>{category.name}</h4>
       </div>)}

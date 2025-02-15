@@ -19,7 +19,7 @@ export default function Categories() {
       <div className="row">
         {categories.length > 0 ? (
           categories.map((product) => (
-            <div key={product.id} className="w-1/5 rounded-lg shadow-md ">
+            <div key={product.id} className=" rounded-lg shadow-md lg:w-1/5 md:w-1/3 sm:w-1/2">
               <div className="product p-3">
                 <Link>
                   <img src={product.image} className="w-full object-cover h-[250px]" alt="" />
